@@ -38,7 +38,7 @@ function Experience() {
     const newEntries = experinceList.slice();
     const { name, value } = event.target;
     newEntries[index][name] = value;
-    console.log(newEntries);
+    // console.log(newEntries);
     setExperinceList(newEntries);
   };
 
@@ -83,11 +83,11 @@ function Experience() {
       },
     };
 
-    console.log(experinceList);
+    // console.log(experinceList);
 
     GlobalApi.UpdateResumeDetail(params?.resumeId, data).then(
       (res) => {
-        console.log(res);
+        // console.log(res);
         setLoading(false);
         toast("Details updated !");
       },

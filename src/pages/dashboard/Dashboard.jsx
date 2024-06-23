@@ -43,7 +43,10 @@ const Dashboard = () => {
               />
             ))
           : [1, 2, 3, 4].map((item, index) => (
-              <div className="h-[280px] rounded-lg bg-slate-200 animate-pulse"></div>
+              <div
+                key={index}
+                className="h-[280px] rounded-lg bg-slate-200 animate-pulse"
+              ></div>
             ))}
       </div>
     </div>
